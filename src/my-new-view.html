@@ -1,20 +1,26 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/paper-slider/paper-slider.html">
 
 <dom-module id="my-new-view">
   <!-- Defines the element's style and local DOM -->
   <template>
-    <style>
+    <style include="shared-styles">
       :host {
         display: block;
 
-        padding: 16px;
+        padding: 10px;
       }
     </style>
 
-    <h1>Spiffy New View</h1>
-    <paper-slider min"-100" max="100" value="50">
-    </paper-slider>
+    <div class="card">
+      <div class="circle">4</div>
+      <h1>Spiffy New View</h1>
+      <p>Here is a brand new view.</p>
+      <p>This is another test paragraph. Below is a paper slider. How cool!</p>
+      <paper-slider min"-100" max="100" value="50">
+      </paper-slider>
+    </div>
   </template>
   <!-- Creates the element's prototype and registers it -->
   <script>
